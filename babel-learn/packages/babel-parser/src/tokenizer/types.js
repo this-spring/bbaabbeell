@@ -201,3 +201,5 @@ export const types: { [name: string]: TokenType } = {
   _void: createKeyword("void", { beforeExpr, prefix, startsExpr }),
   _delete: createKeyword("delete", { beforeExpr, prefix, startsExpr }),
 };
+
+console.log(types);
