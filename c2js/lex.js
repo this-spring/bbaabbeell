@@ -3,9 +3,20 @@
  * @Company: kaochong
  * @Date: 2021-04-08 23:39:49
  * @LastEditors: xiuquanxu
- * @LastEditTime: 2021-04-10 15:52:36
+ * @LastEditTime: 2021-04-12 21:38:26
 */
 // 简单的词法分析，将简单c语言通过状态图进行token分析  
+// int t(int a,int b) {
+//     int c = a + b;
+//     printf("c:%d", c);
+//     return 0;
+// }
+// |
+// function t(a, b) {
+//     var c = a + b;
+//     console.log('c:', c);
+//     return 0
+// }
 const fs = require('fs');
 // 读取c文件
 const str = fs.readFileSync('./test.c', 'utf-8');
